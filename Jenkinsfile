@@ -16,7 +16,7 @@ pipeline {
     success {
       echo 'This will run only if successful'
     }
-    failed {
+    failure {
       echo 'This will run only if failed'
     }
     unstable {
