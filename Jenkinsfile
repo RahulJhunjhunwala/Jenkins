@@ -5,6 +5,8 @@ pipeline {
       steps {
         retry(3) {
           echo 'Building....'
+          javac Hello.java
+          java Hello
         }
       }
     }
